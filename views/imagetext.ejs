@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- <nav class="navbar navbar-light bg-dark justify-content-between">
+    <a class="navbar-brand" id="brand">EXTRACTIMG</a>
+    <form class="form-inline mr-4">
+      <input class="form-control mr-sm-2" type="search" name="url" placeholder="Enter The Url" aria-label="Enter The Url">
+      <button class="btn btn-outline-success my-2 mr-4 my-sm-0" type="submit" formaction="/data" formmethod="POST">Submit</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="/upload" formmethod="GET">Upload</button>
+    </form>
+  </nav> -->
+
+
+<div class="container">
+<div class="image">
+<img src="<%= imageurl%>">
+</div>
+<h1 style="text-align:center; color:white;">Extracted Text :</h1>
+<div class="imgtext">
+<p id="myinput"><%=imagetext%></p>
+<img src="/image/copy.png" id="copy" width="35px" height="35px" onclick="showToast('Text Copied')">
+<div id="toast"></div>
+</div>
+</div>
+
+<script src="/js/script.js"></script>
